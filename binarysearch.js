@@ -67,7 +67,8 @@ function binaryRecursive(nums,numToFind,start,end){
         }
        
 }
-let numbs=[1,2,3,4,5,6,7,8,9]
-let findd=9;
-let result10=binaryRecursive(numbs,findd,0,numbs.length-1)
+let numbs=[1,2,3,4,5,6,6,7,8,9]
+let findd=6;
+
+	let result10=binaryRecursive(numbs,findd,0,numbs.length-1)
 console.log(`${findd} is present at ${result10}th index`)
