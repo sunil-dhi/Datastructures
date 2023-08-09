@@ -50,3 +50,24 @@ if (findNumber !== false) {
 } else {
 	console.log(`${toFind} has not been found.`);
 }
+
+///////////////////////////////  with recursion  ///////////////////////////
+
+function binaryRecursive(nums,numToFind,start,end){
+       let mid= Math.floor((start+end)/2);
+       
+        if(nums[mid]==numToFind){
+            return mid;
+        }
+        else if(numToFind>nums[mid]){
+            return binaryRecursive(nums,numToFind,mid+1,end)
+        }
+        else{
+            return binaryRecursive(nums,numToFind,start,mid-1)
+        }
+       
+}
+let numbs=[1,2,3,4,5,6,7,8,9]
+let findd=9;
+let result10=binaryRecursive(numbs,findd,0,numbs.length-1)
+console.log(`${findd} is present at ${result10}th index`)
