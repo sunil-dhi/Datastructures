@@ -1,3 +1,6 @@
+////stack implementation using array
+
+
 // We create a class for each node within the stack
 class Node {
     // Each node has two properties, its value and a pointer that indicates the node that follows
@@ -58,3 +61,7 @@ console.log(stck.size) // 3
 
 stck.push("value4")
 console.log(stck.pop()) // value4
+
+
+
+
